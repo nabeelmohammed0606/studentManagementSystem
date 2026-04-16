@@ -22,17 +22,25 @@ public class Employee {
     } 
 
 
-
-public void applyDecrement(double percentage) {
-    this.salary += (salary / (percentage / 100));
-}
-
   public void applyIncrement(double percentage) {
 this.salary += (salary * percentage / 100);
 }
 
+// outputs employee details
 public void employeeDetails(String employeeID, String Name, String degisnation, double Salary) {
     System.out.println("Employee ID: " + employeeID + "Employee Name: " + name + "Employee Department: " + designation + "Salary: /$" + salary);
 }
 
+}
+
+// test for the employee
+
+class Employeetest {
+    public static void main(String[] args) {
+        Employee emp1 = new Employee("E001", "Nabee Mohammed", "devsecops engineer", "11500.00");
+        emp1.displayEmployee();
+        emp1.applyIncrement();
+        emp1.displayEmployee();
+
+    }
 }
