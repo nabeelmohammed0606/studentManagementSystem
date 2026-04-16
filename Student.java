@@ -25,11 +25,12 @@ System.out.println("Grade: " + grade);
 // Test Code for Student
 class StudentTest {
 public static void main(String[] args) {
-Student student1 = new Student("275195", "Nabeel", 100.5);
+Student student1 = new Student("275195", "Samara", 100.5);
 student1.displayDetails();
 student1.updateGrade(90.0);
 student1.displayDetails();
 
 // create an if statenent that if the grade is over 100.0 to display: INVALID GRADE
+
 }
 }
